@@ -1,3 +1,4 @@
+
 # Copyright 2019 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
@@ -165,10 +166,10 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 *** Fun
 
 #+NAME: fun-l
-| F12  | F7   | F8   | F9   | PSCR |
-| F11  | F4   | F5   | F6   | SLCK |
-| F10  | F1   | F2   | F3   | PAUS |
-| U_NP | U_NP | APP  | SPC  | TAB  |
+| F12  | F7   | F8  | F9  | PSCR |
+| F11  | F4   | F5  | F6  | SLCK |
+| F10  | F1   | F2  | F3  | PAUS |
+| U_NP | U_NP | APP | SPC | TAB  |
 
 
 *** Alternative Layouts
@@ -255,6 +256,15 @@ The base layer is maintained as separate tables for tap alphas, tap thumbs, and 
 | Q    | W    | E    | R    | T    | Z    | U    | I    | O    | P    |
 | A    | S    | D    | F    | G    | H    | J    | K    | L    | '    |
 | Y    | X    | C    | V    | B    | N    | M    | ,    | DOT  | /    |
+
+***** Hands Down Reference
+
+~MIRYOKU_ALPHAS=HDREF~
+
+#+NAME: hdref
+| Q | C | H | P | V | K | Y | O | J | h/  |
+| R | S | N | T | G | W | U | E | I | A   |
+| X | M | L | D | B | Z | F | ' | , | DOT |
 
 
 **** Nav
@@ -436,6 +446,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | RGB_SAI  | RGB_HUI  | VOLU     | RGB_MOD  | RGB_TOG  |
 | RGB_VAI  | MPRV     | VOLD     | MNXT     | OUT_AUTO |
 | U_BTSEL0 | U_BTSEL1 | U_BTSEL2 | U_BTSEL3 | U_BTCLR  |
+
 | U_NP     | U_NP     | MUTE     | MPLY     | MSTP     |
 
 
@@ -859,7 +870,9 @@ Body of miryoku_layer.h.
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_QWERTY
     #elif defined (MIRYOKU_ALPHAS_QWERTZ)
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_QWERTZ
-    #else
+    #elif defined (MIRYOKU_ALPHAS_HDREF)
+      #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_HDREF
+   #else
       #define MIRYOKU_LAYER_BASE MIRYOKU_ALTERNATIVES_BASE_COLEMAKDH
     #endif
   #endif
@@ -1122,6 +1135,9 @@ return results
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
 <<table-layer-taphold(alphas_table=qwertz)>>
 
+#define MIRYOKU_ALTERNATIVES_BASE_HDREF \
+<<table-layer-taphold(alphas_table=hdref)>>
+
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \
 <<table-layer-half(half_table=nav-l-invertedt, mode="l", hold_table=hold-flip)>>
@@ -1290,6 +1306,9 @@ return results
 
 #define MIRYOKU_ALTERNATIVES_BASE_QWERTZ \
 <<table-layer-taphold(alphas_table=qwertz)>>
+
+#define MIRYOKU_ALTERNATIVES_BASE_HDREF \
+<<table-layer-taphold(alphas_table=hdref)>>
 
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \

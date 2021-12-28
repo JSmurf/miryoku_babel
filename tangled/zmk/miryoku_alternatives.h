@@ -113,6 +113,12 @@ U_NP,              U_NP,              &lt MEDIA ESC,     &lt NAV SPC,       &lt 
 &lt BUTTON Y,      &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt BUTTON SLASH,  \
 U_NP,              U_NP,              &lt MEDIA ESC,     &lt NAV SPC,       &lt MOUSE TAB,     &lt SYM RET,       &lt NUM BSPC,      &lt FUN DEL,       U_NP,              U_NP
 
+#define MIRYOKU_ALTERNATIVES_BASE_HDREF \
+&kp Q,             &kp C,             &kp H,             &kp P,             &kp V,             &kp K,             &kp Y,             &kp O,             &kp J,             &kp h/,            \
+&hm LGUI R,        &hm LALT S,        &hm LCTRL N,       &hm LSHFT T,       &kp G,             &kp W,             &hm LSHFT U,       &hm LCTRL E,       &hm LALT I,        &hm LGUI A,        \
+&lt BUTTON X,      &hm RALT M,        &kp L,             &kp D,             &kp B,             &kp Z,             &kp F,             &kp SQT,           &hm RALT COMMA,    &lt BUTTON DOT,    \
+U_NP,              U_NP,              &lt MEDIA ESC,     &lt NAV SPC,       &lt MOUSE TAB,     &lt SYM RET,       &lt NUM BSPC,      &lt FUN DEL,       U_NP,              U_NP
+
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \
 &kp PG_UP,         &kp HOME,          &kp UP,            &kp END,           &kp INS,           U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \
@@ -179,8 +185,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP \
 &rgb_ug RGB_SAI,   &rgb_ug RGB_HUI,   &kp C_VOL_UP,      &rgb_ug RGB_EFF,   &rgb_ug RGB_TOG,   U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \
 &rgb_ug RGB_BRI,   &kp C_PREV,        &kp C_VOL_DN,      &kp C_NEXT,        &out OUT_TOG,      U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_CLR,        U_NA,              U_NA,              U_NA,              &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp C_MUTE,        &kp C_PP,          &kp C_STOP,        U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_CLR,        U_NA,              U_NA,              U_NA,              &kp RALT,          U_NA
 
 #define MIRYOKU_ALTERNATIVES_MEDIA_FLIP \
 &rgb_ug RGB_EFF,   &rgb_ug RGB_HUI,   &rgb_ug RGB_SAI,   &rgb_ug RGB_BRI,   &rgb_ug RGB_TOG,   U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \

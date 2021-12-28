@@ -115,6 +115,12 @@ LGUI_T(KC_A),      LALT_T(KC_S),      LCTL_T(KC_D),      LSFT_T(KC_F),      KC_G
 LT(BUTTON, KC_Y),  ALGR_T(KC_X),      KC_C,              KC_V,              KC_B,              KC_N,              KC_M,              KC_COMM,           ALGR_T(KC_DOT),    LT(BUTTON, KC_SLSH), \
 U_NP,              U_NP,              LT(MEDIA, KC_ESC), LT(NAV, KC_SPC),   LT(MOUSE, KC_TAB), LT(SYM, KC_ENT),   LT(NUM, KC_BSPC),  LT(FUN, KC_DEL),   U_NP,              U_NP
 
+#define MIRYOKU_ALTERNATIVES_BASE_HDREF \
+KC_Q,              KC_C,              KC_H,              KC_P,              KC_V,              KC_K,              KC_Y,              KC_O,              KC_J,              KC_h/,             \
+LGUI_T(KC_R),      LALT_T(KC_S),      LCTL_T(KC_N),      LSFT_T(KC_T),      KC_G,              KC_W,              LSFT_T(KC_U),      LCTL_T(KC_E),      LALT_T(KC_I),      LGUI_T(KC_A),      \
+LT(BUTTON, KC_X),  ALGR_T(KC_M),      KC_L,              KC_D,              KC_B,              KC_Z,              KC_F,              KC_QUOT,           ALGR_T(KC_COMM),   LT(BUTTON, KC_DOT), \
+U_NP,              U_NP,              LT(MEDIA, KC_ESC), LT(NAV, KC_SPC),   LT(MOUSE, KC_TAB), LT(SYM, KC_ENT),   LT(NUM, KC_BSPC),  LT(FUN, KC_DEL),   U_NP,              U_NP
+
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \
 KC_PGUP,           KC_HOME,           KC_UP,             KC_END,            KC_INS,            U_NA,              U_NA,              U_NA,              U_NA,              RESET,             \
@@ -181,8 +187,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP \
 RGB_SAI,           RGB_HUI,           KC_VOLU,           RGB_MOD,           RGB_TOG,           U_NA,              U_NA,              U_NA,              U_NA,              RESET,             \
 RGB_VAI,           KC_MPRV,           KC_VOLD,           KC_MNXT,           OUT_AUTO,          U_NA,              KC_LSFT,           KC_LCTL,           KC_LALT,           KC_LGUI,           \
-U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NA,              U_NA,              U_NA,              KC_ALGR,           U_NA,              \
-U_NP,              U_NP,              KC_MUTE,           KC_MPLY,           KC_MSTP,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NU,              U_NU,              U_NU,              U_NU,              U_NU,              U_NA,              U_NA,              U_NA,              KC_ALGR,           U_NA
 
 #define MIRYOKU_ALTERNATIVES_MEDIA_FLIP \
 RGB_MOD,           RGB_HUI,           RGB_SAI,           RGB_VAI,           RGB_TOG,           U_NA,              U_NA,              U_NA,              U_NA,              RESET,             \
